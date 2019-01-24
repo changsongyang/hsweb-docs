@@ -6,6 +6,7 @@
   * [通用CRUD](zeng-shan-gai-cha/tong-yong-crud.md)
   * [拓展查询条件](zeng-shan-gai-cha/tuo-zhan-cha-xun-tiao-jian.md)
   * [数据库版本控制](zeng-shan-gai-cha/shu-ju-ku-ban-ben-kong-zhi.md)
+  * [拓展实体类](zeng-shan-gai-cha/tuo-zhan-shi-ti-lei.md)
 * [权限控制](quan-xian-kong-zhi/README.md)
   * [登录授权](quan-xian-kong-zhi/deng-lu-shou-quan.md)
   * [RBAC权限控制](quan-xian-kong-zhi/rbac-quan-xian-kong-zhi.md)

@@ -65,6 +65,8 @@ createQuery()
 
 ```java
 //update table set name=? where user = ?
+User user = ....;
+
 createUpdate()
     .set(user::getName)
     .where(user::getId)
