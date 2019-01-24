@@ -30,7 +30,7 @@ hsweb-framework的模块较多，是为了将功能细化后，可以根据需�
 一些基于hsweb的项目实践: 
 
 | 项目 | 说明 |
-| :--- | :--- |
+| :---: | :--- |
 | [hsweb-payment](http://payment.hsweb.pro) | 多商户，多渠道，多配置的开源聚合支付项目 |
 | [hsweb-iot-cloud](http://iot-cloud.hsweb.pro) | 物联网基础平台 |
 

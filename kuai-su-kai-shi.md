@@ -296,5 +296,5 @@ CREATE DATABASE IF NOT EXISTS myproject default charset utf8 COLLATE utf8_genera
 
 打开浏览器访问 [http://localhost:8080](http://localhost:8080). 提示`Whitelabel Error Page`则说明服务启动成功. 因为现在还没有任何功能,所有提示错误信息.到此,项目建立完成,和普通的spring-boot项目没有区别.
 
-
+{% page-ref page="zeng-shan-gai-cha/" %}
 
