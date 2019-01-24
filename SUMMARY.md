@@ -4,7 +4,7 @@
 * [快速开始](kuai-su-kai-shi.md)
 * [增删改查](zeng-shan-gai-cha/README.md)
   * [通用CRUD](zeng-shan-gai-cha/tong-yong-crud.md)
-  * [拓展查询条件](zeng-shan-gai-cha/tuo-zhan-cha-xun-tiao-jian.md)
+  * [动态SQL条件](zeng-shan-gai-cha/tuo-zhan-cha-xun-tiao-jian.md)
   * [数据库版本控制](zeng-shan-gai-cha/shu-ju-ku-ban-ben-kong-zhi.md)
   * [拓展实体类](zeng-shan-gai-cha/tuo-zhan-shi-ti-lei.md)
 * [权限控制](quan-xian-kong-zhi/README.md)

@@ -8,8 +8,8 @@
 约定: 
 
 1. 列必须明确定义，可通过mapper.xml 中的resultMap或者JPA注解进行定义。
-2. 查询条件的值为空\(null或者空字符串\)时，条件将被忽略。
-3. 新增或者修改的值为null时，列将被忽略。
+2. 查询条件的值为空\(null或者空字符串\)或者列未定义时，条件将被忽略。
+3. 新增或者修改的值为null时或列未定义时，列将被忽略。
 4. 不能执行无条件的 修改，删除操作。
 {% endhint %}
 
@@ -61,6 +61,14 @@ createQuery()
     .select("id","name")
     .where("name",name)
     .single();
+    
+//select * from table where name = ? and (age>? or age <=?)
+createQuery()
+    .where("name",name)
+    .nest()
+      .gt("age",10).or().lte("age",90)
+    .end()
+    .listNoPaging();
 ```
 
 ```java
