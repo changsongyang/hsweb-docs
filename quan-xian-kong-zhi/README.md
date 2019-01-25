@@ -3,7 +3,8 @@
 hsweb提供了一个灵活的权限控制,设置方式,实现了多维度,可自定义的RBAC和数据权限控制.
 
 ## 引入依赖
-```xml
+
+```markup
     <!--权限控制-->
     <dependency>
         <groupId>org.hswebframework.web</groupId>
@@ -74,3 +75,4 @@ public class TestController implements SimpleGenericEntityController<TestEntity,
     }
 }
 ```
+
