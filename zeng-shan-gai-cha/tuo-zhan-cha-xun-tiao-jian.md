@@ -187,7 +187,7 @@ hsweb提供了SQL条件的拓展功能，用于添加特殊的查询条件。让
 ```java
 //AbstractSqlTermCustomer提供了一些便利的方法
 @org.springframework.stereotype.Component //注入到spring自动开启支持此条件
-public class UserInDepartmentTerm extends AbstractSqlTermCustomer{
+public class UserInDepartmentTerm extends AbstractSqlTermCustomizer{
 
     @Override
     public String getTermType() {
