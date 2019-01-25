@@ -68,6 +68,8 @@ createQuery()
     .nest()
       .gt("age",10).or().lte("age",90)
     .end()
+    //当type==1时,才拼接 and status=?
+    .when(type==1,query-> query.and("status","success"))
     .listNoPaging();
 ```
 
