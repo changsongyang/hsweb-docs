@@ -92,8 +92,8 @@ public ResponseMessage<PagerResult<Order>> queryOrder(QueryParamEntity param){
   String userId = ....;//当前登录用户ID
   
   //where creatorId = ? and ( 前端传入的参数 )
-  return param.toNestQuery(query->query.and("creatorId",userId))
-              .execute(service::selectPager);
+  return ok(param.toNestQuery(query->query.and("creatorId",userId))
+              .execute(service::selectPager));
 
 }
 ```
