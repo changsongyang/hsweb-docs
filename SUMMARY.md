@@ -9,6 +9,7 @@
   * [拓展实体类](zeng-shan-gai-cha/tuo-zhan-shi-ti-lei.md)
 * [权限控制](quan-xian-kong-zhi/README.md)
   * [登录授权](quan-xian-kong-zhi/deng-lu-shou-quan.md)
+  * [双因子验证](quan-xian-kong-zhi/shuang-yin-zi-yan-zheng.md)
   * [RBAC权限控制](quan-xian-kong-zhi/rbac-quan-xian-kong-zhi.md)
   * [数据权限控制](quan-xian-kong-zhi/shu-ju-quan-xian-kong-zhi.md)
   * [使用数据库管理权限信息](quan-xian-kong-zhi/shi-yong-shu-ju-ku-guan-li-quan-xian-xin-xi.md)

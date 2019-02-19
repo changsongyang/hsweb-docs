@@ -5,13 +5,13 @@
 `hsweb`实现了`Dao`,`Service`,`Controller`层的通用增删改查，以及灵活的`动态条件`以及`API`,可在不修改mybatis mapper.xml的情况下实现动态添加sql条件。所有参数都使用了参数化预编译，没有sql注入风险。
 
 {% hint style="info" %}
-约定: 
+
+约定:
 
 1. 列必须明确定义，可通过mapper.xml 中的resultMap或者JPA注解进行定义。
 2. 查询条件的值为空\(null或者空字符串\)或者列未定义时，条件将被忽略。
 3. 新增或者修改的值为null时或列未定义时，列将被忽略。
 4. 不能执行无条件的 修改，删除操作。
-{% endhint %}
 
 ## Dao层
 
@@ -41,14 +41,13 @@
         <bind name="resultMapId" value="'UserResultMap'"/> <!--注意这里的单引号: 'UserResultMap'-->
         <bind name="tableName" value="'s_user'"/> <!--注意这里的单引号: 's_user' -->
     </sql>
-    
+
     <select id="query" parameterType="org.hswebframework.web.commons.entity.Entity" resultMap="UserResultMap">
         <include refid="config"/>
         <include refid="BasicMapper.buildSelectSql"/>
     </select>
 
 </mapper>
-
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
@@ -61,7 +60,7 @@ createQuery()
     .select("id","name")
     .where("name",name)
     .single();
-    
+
 //select * from table where name = ? and (age>? or age <=?)
 createQuery()
     .where("name",name)
@@ -90,7 +89,7 @@ createUpdate()
 public ResponseMessage<PagerResult<Order>> queryOrder(QueryParamEntity param){
 
   String userId = ....;//当前登录用户ID
-  
+
   //where creatorId = ? and ( 前端传入的参数 )
   return ok(param.toNestQuery(query->query.and("creatorId",userId))
               .execute(service::selectPager));
@@ -101,6 +100,4 @@ public ResponseMessage<PagerResult<Order>> queryOrder(QueryParamEntity param){
 ## 开始使用
 
 {% page-ref page="tong-yong-crud.md" %}
-
-
 
