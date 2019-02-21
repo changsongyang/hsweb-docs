@@ -4,8 +4,6 @@
 
 `hsweb`实现了`Dao`,`Service`,`Controller`层的通用增删改查，以及灵活的`动态条件`以及`API`,可在不修改mybatis mapper.xml的情况下实现动态添加sql条件。所有参数都使用了参数化预编译，没有sql注入风险。
 
-{% hint style="info" %}
-
 约定:
 
 1. 列必须明确定义，可通过mapper.xml 中的resultMap或者JPA注解进行定义。
