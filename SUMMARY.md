@@ -23,6 +23,7 @@
   * [Excel导入导出](chang-yong-gong-ju/excel-dao-ru-dao-chu.md)
 * [日志](ri-zhi.md)
 * [多数据源](duo-shu-ju-yuan/README.md)
+  * [多数据源管理](duo-shu-ju-yuan/duo-shu-ju-yuan-guan-li.md)
   * [Mybatis 多数据源](duo-shu-ju-yuan/mybatis-duo-shu-ju-yuan.md)
   * [Jta 多数据源事务](duo-shu-ju-yuan/jta-duo-shu-ju-yuan-shi-wu.md)
 * [业务功能](ye-wu-gong-neng/README.md)
