@@ -31,7 +31,8 @@ spring:
 ```yaml
 hsweb:
   datasource:
-    test_ds:  # 数据源ID
+   jta:
+     test_ds:  # 数据源ID
         xa-data-source-class-name: com.alibaba.druid.pool.xa.DruidXADataSource
         xa-properties: # 数据源的配置属性
           url: jdbc:h2:mem:test;DB_CLOSE_ON_EXIT=FALSE
@@ -39,7 +40,7 @@ hsweb:
           password:
         max-pool-size: 20
         borrow-connection-timeout: 1000
-    test_ds2: # 数据源ID
+     test_ds2: # 数据源ID
       xa-data-source-class-name: com.alibaba.druid.pool.xa.DruidXADataSource
       xa-properties: # 数据源的配置属性
         url: jdbc:mysql://localhost:3306/hsweb?pinGlobalTxToPhysicalConnection=true&useSSL=false&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&failOverReadOnly=false
